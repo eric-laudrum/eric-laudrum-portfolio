@@ -1,6 +1,6 @@
 export default function ProjectNav({ active, setActive }: { active: string, setActive: (val: string) => void }) {
     
-    const navItems = [ "Contractor Connect", "Trellis", "Warble", "Loop-In" ];
+    const navItems = [/* "Contractor Connect", */"Trellis", "Warble", "Loop-In" ];
     
     return (
         <div className='project-nav'>

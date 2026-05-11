@@ -7,11 +7,11 @@ import projects from "@/components/Data/ProjectsData";
 import styles from "./projects.module.css"
 
 export default function ProjectPage() {
-    const [activeProject, setActiveProject] = useState("Contractor Connect");
+    const [activeProject, setActiveProject] = useState("Trellis");
     const currentProject = projects.find(p => p.title === activeProject);
 
     const projectPrefixes: Record<string, string> = {
-        "Contractor Connect": "cc",
+     /*   "Contractor Connect": "cc",*/
         "Trellis": "trellis",
         "Loop-In": "loopIn",
         "Warble": "warble"

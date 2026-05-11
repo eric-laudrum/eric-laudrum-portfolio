@@ -24,7 +24,7 @@ interface Project {
 }
 
 const projects: Project[] = [
-    {
+   /* {
         title: "Contractor Connect",
         sections: ["Overview", "Project Plan", "Project Vision", "Project Requirements", "Diagrams", "Prototype", "System Implementation", "Status Report"],
         description: "An online bidding platform for home improvement projects.",
@@ -33,7 +33,7 @@ const projects: Project[] = [
         github: "https://github.com/AdelAlhajHussein/contractor_connect",
         website: "https://ContractorConnect.cc",
         component: ContractorConnect,
-    },
+    },*/
     {
         title: "Trellis",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Prototype", "Roadmap"],
@@ -46,7 +46,7 @@ const projects: Project[] = [
     {
         title: "Warble",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
-        description: "description for warble.",
+        description: "An online marketplace for audio kits and foley sounds.",
         tags: ["Spring Boot", "React", "PostgreSQL", "JWT", "Java", "Cloudinary", "Docker"],
         image: "/assets/screenshots/warbleHome.jpg",
         github: "https://github.com/eric-laudrum/warble",
@@ -55,7 +55,7 @@ const projects: Project[] = [
     {
         title: "Loop-In",
         sections: ["Overview", "Tech Stack", "Architecture & Design", "Roadmap"],
-        description: "description for loopin.",
+        description: "A blog style forum to discuss and track the development of different audio sampling tools.",
         tags: ["React", "Vite", "Node.js", "MongoDB", "Firebase", "Express"],
         image: "/assets/screenshots/loopInHome.jpg",
         github: "https://github.com/eric-laudrum/LoopIn",

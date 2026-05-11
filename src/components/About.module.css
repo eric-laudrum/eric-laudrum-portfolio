@@ -22,7 +22,6 @@
     gap: 3rem;
     padding: 2rem 5%;
 
-    border: 5px solid salmon;
 
 }
 
@@ -44,7 +43,6 @@
     width: max-content;
     font-family:"Bookman", serif;
 
-    border: 5px solid orange;
 
 }
 
@@ -61,7 +59,9 @@
 
 .imageWrapper {
     flex: 0 0 300px;
+    height: fit-content;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
 }
 
 .headshotImg {
@@ -69,12 +69,20 @@
     height: auto;
     border-radius: 2px;
     object-fit: cover;
+
 }
 
 .mainText {
     flex: 1; 
     min-width: 200px;
     max-width: 500px;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.4);
+
+
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .paragraphList {
@@ -98,13 +106,9 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-    width: 275px;
-    min-width: 40%; 
-    max-width: 100%;
-
-    border: 2px dashed transparent;
-  
-
+    width: 30%;  
+    position: relative;
+    top: 6.5em;
 }
 
 .githubStat{
@@ -116,6 +120,7 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
+
 }
 
 .githubStatImage{
@@ -133,6 +138,8 @@
     justify-content: center;
     align-items: center;
     background: white;
+
+    border: 5px solid orange;
 }
 
 #top-languages {
@@ -168,6 +175,7 @@
         text-align: center;
         width: 100%;
     }
+
     
     .sectionContainer {
         justify-content: center;
@@ -201,6 +209,7 @@
         flex: none;
         width: 100%;
         text-align: left;
+
     }
 
     .imageWrapper {
