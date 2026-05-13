@@ -213,11 +213,11 @@ export default function Resume(){
                         />
                     ))}
                 </div>
-
+{/*
                 <div>
                     <Recommendations />
                 </div>
-
+*/}
             </div>                
         </div>
     )
