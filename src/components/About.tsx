@@ -14,7 +14,7 @@ export default function About() {
     const [activeTab, setActiveTab] = useState('skills');
     
     return (
-        <section className={styles.sectionContainer} id="about-section">
+        <section className={styles.sectionContainer}>
             {/* Visual Hook */}
             <div className={styles.imageBar}>
                 <img src="/assets/screenshots/about-photos-04.png" alt="developer photos" className={styles.fullWidthPhoto} />
@@ -50,7 +50,7 @@ export default function About() {
                         <>
                             <img className={styles.smallPhoto} src="/assets/screenshots/warbleHome.jpg" alt="Skills" />
                             <div className={styles.projectAbout}>
-                                <p>Specializing in Java, C#, Python, and React. I build scalable backends and fluid frontends.</p>
+                                <p className={styles.projectText}>Specializing in Java, C#, Python, and React. I build scalable backends and fluid frontends.</p>
                             </div>
                         </>
                     )}
@@ -58,15 +58,19 @@ export default function About() {
                         <>
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
-                                <p>Check out some current projects, from real-time music production to e-commerce.</p>
+                                <p className={styles.projectText}>Check out some current projects, from real-time music production to e-commerce.</p>
                                 <Link className={styles.linkButton} href='/projects'>View Projects</Link>
                             </div>
                         </>
                     )}
                     {activeTab === 'ai' && (
-                        <div className={styles.projectAbout}>
-                            <p>Training and evaluating LLMs through structured data annotation and prompt engineering.</p>
-                        </div>
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+                            <div className={styles.projectAbout}>
+                                
+                            <p className={styles.projectText}>Training and evaluating LLMs through structured data annotation and prompt engineering.</p>
+                            </div>
+                        </>    
                     )}
                 </div>            
             </div>
