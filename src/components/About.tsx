@@ -3,72 +3,73 @@
 - - - - - - - - Home Page / About Section - - - - - - - - 
 
 */
+"use client"
 
 import styles from './About.module.css';
-import GitHubStats from "../components/GitHubStats";
+import { useState} from 'react';
+import Link from 'next/link';
 
 
-interface AboutProps {
-    isFullPage?: boolean;
-}
-
-export default function About({ isFullPage = false }: AboutProps) {
+export default function About() {
+    const [activeTab, setActiveTab] = useState('skills');
+    
     return (
         <section className={styles.sectionContainer} id="about-section">
-           
-                
-                {/* Title, headshot, text */}
-                <div className={styles.leftSide}>
-                    <h1 className={styles.aboutTitle}>
-                        Hi, I’m Eric
-                    </h1>
-               
+            {/* Visual Hook */}
+            <div className={styles.imageBar}>
+                <img src="/assets/screenshots/about-photos-04.png" alt="developer photos" className={styles.fullWidthPhoto} />
+                <img src="/assets/screenshots/about-photos-06.png" alt="abstract static image" className={styles.fullWidthPhoto} />
+            </div>
 
-                    <div className={styles.aboutBody}>
+            {/* Philosophy & Short Intro */}
+            <div className={styles.textColumns}>
+                <div className={styles.textColumn}>
+                    <p className={styles.quote}>
+                        I Believe That Good Design Looks Invisible, And The Best Tools Are The Ones You Have Available. 
+                    </p>
+                </div>
+                <div className={styles.textColumn}>
+                    <p className={styles.text}>
+                        I’m a full-stack developer bridging the gap between technical logic and human behavior. 
+                        With a background in Sociology and a focus on Computer Programming, 
+                         I build software that is as intuitive as it is powerful.
+                    </p>
+                </div>
+            </div>
 
-                        {/* Headshot */}
-                        <div className={styles.imageWrapper}>
-                            <img 
-                                className={styles.headshotImg}
-                                src="/assets/screenshots/eric-headshot.jpg" 
-                                alt="Eric Headshot"
-                                width={300}
-                                height={300}
-                            />
+            {/* Interactive Preview */}
+            <div className={styles.projectBar}>
+                <div className={styles.badgeRow}>
+                    <button className={`${styles.setActiveButton} ${activeTab === 'skills' ? styles.active : ''}`} onClick={() => setActiveTab('skills')}>Skills</button>
+                    <button className={`${styles.setActiveButton} ${activeTab === 'projects' ? styles.active : ''}`} onClick={() => setActiveTab('projects')}>Projects</button>
+                    <button className={`${styles.setActiveButton} ${activeTab === 'ai' ? styles.active : ''}`} onClick={() => setActiveTab('ai')}>AI & Data</button>
+                </div>
+
+                <div className={styles.projectRow}>
+                    {activeTab === 'skills' && (
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/warbleHome.jpg" alt="Skills" />
+                            <div className={styles.projectAbout}>
+                                <p>Specializing in Java, C#, Python, and React. I build scalable backends and fluid frontends.</p>
+                            </div>
+                        </>
+                    )}
+                    {activeTab === 'projects' && (
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+                            <div className={styles.projectAbout}>
+                                <p>Check out some current projects, from real-time music production to e-commerce.</p>
+                                <Link className={styles.linkButton} href='/projects'>View Projects</Link>
+                            </div>
+                        </>
+                    )}
+                    {activeTab === 'ai' && (
+                        <div className={styles.projectAbout}>
+                            <p>Training and evaluating LLMs through structured data annotation and prompt engineering.</p>
                         </div>
-
-                        {/* Text Content */}
-                        <div className={styles.mainText} id="about">           
-                            <ul className={styles.paragraphList}>
-                                
-                                <li className={styles.aboutParagraph}>
-                                    A full-stack developer who turns complex ideas into simple, intuitive products that work cleanly and feel effortless to use. 
-                                </li>
-                                <li className={styles.aboutParagraph}>
-                                    I work across Java, C#, Python, React, and Node.js, blending technical logic with a background in sociology.
-                                </li>
-                                <li className={styles.aboutParagraph}>
-                                    I believe that good design should be invisible, and the best tools are the ones that stay out of the user's way.
-                                </li>
-                        
-                            </ul>
-                        </div>
-
-
-
-                    
-                    </div>
-                    
-
-             </div>
-             <GitHubStats />
-
-                
-                
-                
-
-               
-     
+                    )}
+                </div>            
+            </div>
         </section>
     );
 }
