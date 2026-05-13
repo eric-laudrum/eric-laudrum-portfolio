@@ -1,6 +1,6 @@
 /* contact.module.css */
 
-.sectionContainer {
+.contactContainer {
     display: flex;
     flex-direction: column;
     padding: 2rem 5%;
@@ -9,8 +9,12 @@
     min-height: 70vh;
     box-sizing: border-box;
     background-color: var(--primary-cream);
-    border: 5px solid transparent;
+
 }
+
+
+
+
 
 .leftContact {
   width: 100%;
@@ -64,6 +68,7 @@
     width: 100%;
     display: flex;
     justify-content: flex-start;
+
 }
 
 
@@ -71,18 +76,22 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px;
     background-color: #f8fbff;
     padding: 2rem;
     border-radius: 12px;
     border: 1px solid rgba(42, 118, 156, 0.1);
     box-shadow: 0 4px 20px rgba(42, 118, 156, 0.08);
+
+    border: 10px dashed green;
+
 }
 
 .formRow {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
+    width: 100%;
+
 }
 
 .formCol {
@@ -106,6 +115,7 @@
     border: 1px solid #d1d9e0;
     border-radius: 6px;
     font-size: 1rem;
+
 }
 
 .formField:focus {
@@ -121,6 +131,11 @@
 }
 
 .submitButton {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    align-content: center;
     background-color: #171717;
     color: white;
     border: none;
@@ -128,9 +143,10 @@
     width: 100%;
     max-width: 200px;
     padding: 0.8rem;
-    align-self: flex-start;
     font-weight: 600;
     cursor: pointer;
+    
+
 }
 
 .submitButton:hover {
@@ -165,13 +181,19 @@
 .contactForm {
   display: flex;
   flex-direction: column;
+  align-items: center;
+
   width: 100%; 
-  max-width: 600px; 
+ 
+
+
+  background-color: #f8fbff;
   border: 1px solid rgba(42, 118, 156, 0.1);
   box-shadow: 0 4px 20px rgba(42, 118, 156, 0.08);
-  background-color: #f8fbff;
+  
   padding: 2rem;
   border-radius: 12px;
+
 }
 
 
