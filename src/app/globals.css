@@ -91,7 +91,7 @@ main{
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 6em;
   z-index: 1000;
   background-color: var(--primary);
 

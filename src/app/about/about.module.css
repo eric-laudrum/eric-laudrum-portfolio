@@ -1,111 +1,125 @@
 /* 
-
 - - - - - - - - - - About Tab - - - - - - - - - - 
-
 */
-
-
 .sectionContainer{
-
     display: flex;
     flex-direction: column;
-    
+    box-sizing: border-box;
+
     width: 100%;
     max-width: 100%;
-    box-sizing: border-box;
+
     margin: 0;
+    padding: 1.5rem 2em;
 
-    padding: 2rem 5%;
-    gap: 4rem;
     background-color: #fdfaf5;
-    border: 50px solid blue;
-
+    border: 10px solid none;
 }
 
 
 
-/*  Main body */
+/*  ---------------- Main body ---------------- */
 .aboutTitle {
-    font-size: 7rem;
+    font-size: clamp(2.5rem, 8vw, 8rem); 
     line-height: 1.1;
     font-weight: bold;
     color: #151d08e5;
-    width: max-content;
-    font-family:"Bookman", serif;
-
+    width: 100%;
+    font-family: "Bookman", serif;
+    margin-bottom: 1rem;
 }
 .aboutBody{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-
-    gap: 4rem;
+    justify-content: center;
+    gap: 4em;
     width: 100%;
-    
+    border: 10px solid none;
 }
-
-
 .leftSide {
-    flex: 2 1 500px;
+    flex: 1 1 600px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    
+    min-width: 0;
 }
 
+/* ---------------- Photo ---------------- */
 .imageWrapper {
-    flex: 0 0 300px;
+    flex: 0 1 300px;
+    max-width: 300px;
     height: fit-content;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 
+    border: 5px dashed none;
 }
-
 .headshotImg {
     width: 100%;
     height: auto;
     border-radius: 2px;
     object-fit: cover;
 
-
+    border: 5px solid none;
 }
 
+
+/* ---------------- About Text ---------------- */
 .mainText {
+    padding-top: 4em;
+    min-width: 0;
+    max-width: 425px;
 
-    min-width: 200px;
-    max-width: 500px;
     border-radius: 8px;
-    padding: 1em 0;
-    background-color: rgba(255, 255, 255, 0.4);
 
-
-    font-family: Arial, Helvetica, sans-serif;
-
+    border: 10px solid none;
 }
 
 .paragraphList {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     list-style: none;
+    line-height: 1;
+
+    align-content: space-evenly;
+
+    align-items: flex-start;
+    gap: 1em;
+
+    border: 10px solid none;
 }
 
 .aboutParagraph {
-    margin-bottom: 5px;
-    line-height: 1.6;
-    font-size: 1.2rem;
-    
+    display: flex;
+    flex: 1;
 
+    /*font-size: clamp(1rem, 1.2vw, 1.1rem);*/
+
+    font-family: sans-serif;
+    line-height: 1.4;
+
+    min-height: 0;
+
+    padding: none;
+    border: 10px solid none;
 }
+
+
+
+
 
 
 /* ---------------------- GitHub Stats --------------------- */
 .githubStats {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    width: 30%;
-    position: relative;
-    top: -2em;
+    gap: 5px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    position: static;
 
+    border: 10px dashed none;
 }
-
 .githubStat{
     width: 100%; 
     display: flex;
@@ -117,18 +131,12 @@
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.044);
     overflow: hidden;
-
-
 }
-
 .githubStatImage{
     width: 100%; 
     height: auto;
     display: block;
-
-
 }
-
 #donut-wrapper {
     width: 100%;
     height: 150px;
@@ -139,266 +147,36 @@
     align-items: center;
     background: white;
 
-    border: 5px solid orange;
+    border: 5px solid none;
 }
-
 #top-languages {
     width: 110% !important; 
     height: auto;
     transform: translateY(0);
 
-    border: 5px dashed mediumorchid;
+    border: 5px dashed none;
 }
-
 #general-stats {
     width: 100% !important;
     height: auto;
     display: block;
     border-radius: 10px;
 
-    border: 5px dashed mediumspringgreen;
+    border: 5px dashed none;
 }
-
 .github-link {
     text-decoration: none;
     font-size: 0.9rem;
     color: #555;
     transition: color 0.2s, padding-left 0.2s;
 }
-
 .github-link:hover {
     color: #2a769c;
     padding-left: 5px;
 }
+/* ----------------------------------------------------- */
 
 
-
-
-
-
-.textColumns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-
-
-    border: 10px solid red;
-}
-
-.textColumn {
-    flex: 0 1 500px;
-    display: flex;
-    flex-direction: column;
-    border: 10px solid red;
-}
-
-.quote {
-    font-size: 2.5rem;
-    font-family: "Bookman", serif;
-    line-height: 1.2;
-    color: #151d08;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: 10px solid red;
-}
-
-.text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    border: 10px solid red;
-}
-
-.fullWidthPhoto{
-    flex: 1;
-    width: 50%;
-
-    height: auto;
-    max-height: 300px;
-    object-fit: cover;
-
-    border-radius: 4px;
-    filter: grayscale(20%);
-    transition: filter 0.3s ease;
-    border: 10px solid red;
-}
-
-.fullWidthPhoto:hover {
-    filter: grayscale(0%);
-    border: 10px solid red;
-}
-
-
-.textColumns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: start;
-    border: 10px solid red;
-}
-
-.textColumn {
-    flex: 0 1 500px;
-    display: flex;
-    flex-direction: column;
-    border: 10px solid red;
-}
-
-.quote {
-    font-size: 2.5rem;
-    font-family: "Bookman", serif;
-    line-height: 1.2;
-    color: #151d08;
-    font-weight: bold;
-    text-transform: capitalize;
-    border: 10px solid red;
-}
-
-.text {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #333;
-    border: 10px solid red;
-}
-
-
-
-/* -------- Project Bar ---------*/
-
-.projectBar{
-    background-color: var(--secondary-cream);
-    padding: 1em;
-    width: 100%;
-    border: 10px solid red;
-}
-
-.badgeRow{
-    display: flex;
-    gap: 3em;
-
-    margin-top: 0.75em;
-    
-    justify-content: center;
-    border: 10px solid red;
-    
-}
-
-
-.projectRow{
-    display: flex;
-    flex-direction: row;
-    padding: 2em;
-    
-
-    gap: 1.1em;
-    border: 10px solid red;
-    
-}
-
-.projectAbout{
-
-    display: flex;
-    flex-direction: column;
-
-    align-content: space-evenly;
-    justify-content: start;
-
-    padding: 1em;
-    gap: 1em;
-    line-height: 1.7;
-    border: 10px solid red;
-
-}
-
-
-
-
-.projectAbout, .smallPhoto{
-    width: 100%;
-    flex: 1;
-    border: 10px solid red;
-
-}
-
-
-
-.linkButton, .setActiveButton{
-    border: 1px solid black;
-    border-radius: 5px;
-    padding: 0.5em 1em;
-    background-color: var(--primary-cream);
-    width: fit-content;
-    font-size: 0.9rem;
-    border: 10px solid red;
-
-}
-
-.setActiveButton {
-    opacity: 0.6;
-    transition: all 0.3s ease;
-    padding: 1em;
-    font-size: 1em;
-    border: none;
-    border: 10px solid red;
-}
-
-.setActiveButton.active {
-    opacity: 1;
-    border-bottom: 2px solid #000;
-    font-weight: bold;
-    border: 10px solid red;
-}
-
-
-
-.subTitle{
-    font-size: 1.5em;
-    font-weight: bold;
-    border: 10px solid red;
-}
-
-.threeColumnGrid {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    gap: 3rem;
-    align-items: start;
-    width: 1300px; 
-    border: 10px solid red;
-
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    width: 400px;
-    border: 10px solid red;
-}
-
-
-
-.contentBox h2, .contentBox h3 {
-    margin-top: 0;
-    color: #2a769c;
-    border: 10px solid red;
-}
-
-.aboutParagraph {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-    color: #333;
-    list-style: none;
-    width: 400px;
-
-}
-
-.projectPoint{
-    margin-left: 2em;
-    list-style: '- ';
-    border: 10px solid red;
-}
 
 /* Animations */
 @keyframes fadeIn {
@@ -407,83 +185,100 @@
 }
 
 
-/* -------------------- Mobile --------------------- */
-@media (max-width: 900px) {
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* -------------------- Mobile --------------------- */
+/* ------------------------------------------------- */
+@media (max-width: 900px) {
     .sectionContainer {
         padding: 2rem 1.5rem;
         gap: 2rem;
+        border: 10px solid none;
+    }
+    .leftSide{
+   
+        border: 10px solid none;
+    }
+    .aboutTitle{
+        font-size: 3em;
+        
+        border: 10px solid none;
+    }
+    .aboutBody{
+        border: 10px solid none;
+    }
+    .imageWrapper{
+        border: 10px dotted none;
+    }
+    .headshotImg{
+        margin-bottom: -40px;
+        border: 10px solid none;
     }
 
-    .imageBar {
-        flex-direction: column;
-    }
-    .fullWidthPhoto:last-child {
-        display: none;
-    }
+    /* ---------------- Text ---------------- */
+    .mainText{
+        padding: 0;
+        gap: 0;
 
-    .textColumns, .projectRow {
-        grid-template-columns: 1fr;
+        border: 10px solid none;
     }
+    .paragraphList{
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
 
-    .quote {
-        font-size: 1.8rem;
-    }
-
-    .fullWidthPhoto {
-        width: 100%;
-        max-height: 150px;
+        padding: none;
+        gap: none;
+        border: 10px solid none;
     }
 
-    .badgeRow {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-    }
-
-    .textColumns {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-
-    .quote {
-        font-size: 1.8rem;
-    }
-
-    .projectBar {
-        padding: 1.5rem;
-    }
-
-    .setActiveButton {
-        width: 100%;
-        text-align: left;
-        padding: 0.8rem;
-        position: relative;
-    }
-
-
-    .projectRow {
-        flex-direction: column;
-        padding: 1rem 0;
-    }
-
-    .smallPhoto, .projectAbout {
-        width: 100%;
-    }
-
-    .smallPhoto {
-        max-height: 200px;
-        object-fit: cover;
-    }
-
-    .threeColumnGrid, .column, .aboutParagraph {
+    .aboutParagraph {
         width: 100% !important;
         grid-template-columns: 1fr;
+        margin: 0px;
+
+        border: 10px solid none;
     }
 
     .github-stats{
         flex: none;
         width: 100%;
         align-items: center;
+        justify-content: center;
+    }
+
+    .github-stat{
+        margin: 0;
     }
 }

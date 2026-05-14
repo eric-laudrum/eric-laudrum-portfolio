@@ -19,7 +19,6 @@
     box-sizing: border-box;
 
     overflow: visible;
-    gap: 3rem;
     padding: 0.5rem 5%;
 
     border: 5px dotted none;
@@ -27,7 +26,7 @@
 }
 
 
-/* -------- Image Bar ------- */
+/* ----------------- Image Bar ----------------- */
 .imageBar {
     display: flex;
     flex-direction: row;
@@ -36,7 +35,7 @@
     width: 100%;
     min-width: 350px;
     align-content: start;
-    margin: 1em 1em -2em 1em;
+    margin: 1em 1em 0 1em;
 
 }
 .fullWidthPhoto{
@@ -49,21 +48,19 @@
     object-fit: fit;
 
     border-radius: 4px;
-    filter: grayscale(20%);
-    transition: filter 0.3s ease;
+
 }
 
 
-/* ---------- About Text ----------- */
+/* ----------------- About Text ----------------- */
 .textColumns{
     padding: 0 2em;
     
     border: 5px solid none;
-    
 }
 .textColumn{
+
     border: 5px solid none;
-    margin-bottom: -2em;
 }
 .quote {
     font-size: 2.5rem;
@@ -81,19 +78,7 @@
 }
 
 
-/* --------------- Projects ------------*/
-.smallPhoto {
-    
-    flex: 1 1 0%;
-    min-width: 0;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.1);
-    
-    border: 10px solid rgba(0, 0, 0, 0.098);
-}
-
-
+/* ------------------------- Projects ------------------------- */
 .textColumns {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -102,67 +87,61 @@
     margin: 1em 0;
       
 }
-
 .textColumn {
     flex: 0 1 500px;
     display: flex;
     flex-direction: column;
-
+    border: 5px solid none;
 }
 
 
 
 
 
+
+/* --------------- Project Bar ----------------*/
+.projectBar{
+    background-color: var(--secondary-cream);
+    padding: 1em;
+    width: 100%;
+    align-self: center;
+
+    border: 5px solid none;
+}
+.badgeRow{
+    display: flex;
+    gap: 3em;
+    margin-top: 0.75em;
+    justify-content: center;
+}
 .setActiveButton {
     opacity: 0.6;
     transition: all 0.3s ease;
     padding: 1em;
     font-size: 1em;
     border: none;
-
 }
-
 .setActiveButton.active {
     opacity: 1;
     border-bottom: 2px solid #000;
     font-weight: bold;
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.15);
 }
-
-
-
-
-/* -------- Project Bar ---------*/
-
-.projectBar{
-    background-color: var(--secondary-cream);
-    padding: 1em;
-    width: 100%;
-   
-}
-
-.badgeRow{
-    display: flex;
-    gap: 3em;
-
-    margin-top: 0.75em;
-    
-    justify-content: center;
-   
-    
-}
-
-
 .projectRow{
     display: flex;
     flex-direction: row;
     padding: 2em;
-    
-
     gap: 1.1em;
-   
     
+}
+.smallPhoto {
+    flex: 1 1 0%;
+    min-width: 0;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.1);
+    
+    border: 10px solid rgba(0, 0, 0, 0.098);
 }
 
 .projectAbout{
@@ -177,6 +156,7 @@
     gap: 1em;
     line-height: 1.7;
 
+
 }
 
 
@@ -188,8 +168,6 @@
 
 }
 
-
-
 .linkButton, .setActiveButton{
     border: 1px solid rgba(0, 0, 0, 0.287);
     border-radius: 5px;
@@ -199,7 +177,6 @@
     font-size: 0.9rem;
 
 }
-
 .setActiveButton {
     opacity: 0.6;
     transition: all 0.3s ease;
@@ -208,16 +185,13 @@
     border: none;
   
 }
-
 .setActiveButton.active {
     opacity: 1;
     border-bottom: 2px solid #000;
     font-weight: bold;
-
 }
 
-
-
+/* ---------------------------------------------------- */
 
 
 
@@ -255,33 +229,39 @@
 
 
 
-/* ////////////////////////////////////////////// */
-/* ------------------ Mobile ------------------ */
-/* ////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////// */
+/* ------------------------- Mobile ------------------ */
+/* //////////////////////////////////////////////////////// */
 
 @media (max-width: 900px) {
     .sectionContainer {
-        padding-top: 10px;
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+
+        align-content: center;
+
+
+        padding: none;
+        margin: none;
       
         border: 5px solid none;
     }
-
     .imageBar{
         flex: 1;
         width: 100%;
         justify-content: center;
+
+
         border: 5px solid none;
     }
     .fullWidthPhoto{
         min-width: 10px;
-        max-width: 40%;
+        max-width: 35%;
+
         border: 5px solid none;
     }
     .fullWidthPhoto:nth-child(1){
-        min-width: 95%;
+        min-width: 100%;
     }
     .fullWidthPhoto:nth-child(2){
         display: none;
@@ -290,22 +270,23 @@
 
     /* --------------- Quote & Text --------------- */
     .textColumns{
-
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 10px;
+        padding: 10px 0;
+
+        align-self: center;
+        justify-content: center;
+        margin: -15px 0;
         
-
-        border: 5px solid none;
+        border: 5px dashed none;
     }
-
     .textColumn{
         flex: 1;
+        width: 300px;
         border: 5px solid none;
 
     }
-
     .quote{
         font-size: 1.5em;
         border: 10px dotted none;
@@ -313,13 +294,21 @@
     .text{
         width: 100%;
         font-family: sans-serif;
-        line-height: 25px;
-        background-color: var(--secondary-cream);
+        line-height: 1.3;
+        background-color: rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
         border: 10px dotted none;
         font-size: 1em;
-        padding: 10px;
+
+        padding: 1.5em;
+        margin-top: 10px;
     }
 
+
+    /* ------------------- Projects ------------------- */
+    .projectBar{
+        border: 10px solid none;
+    }
     .badgeRow{
         border: 5px solid none;
         gap: 5px;
@@ -342,6 +331,8 @@
         border: 2px solid none;
     }
 
+
+
     .projectRow{
         display: flex;
         padding: 0;
@@ -352,7 +343,6 @@
     .smallPhoto{
 
         border: 5px solid none;
-        
     }
     .projectText{
         font-family: sans-serif;
