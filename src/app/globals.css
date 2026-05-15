@@ -176,19 +176,6 @@ main{
   flex-direction: column;
 }
 
-.project-nav{
-  position: sticky;
-  top: 7.5rem;
-  z-index: 999; 
-  display: flex;
-  
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 1em;
-  border-bottom: 2px solid black;
-  background-color: var(--primary-cream);
-
-}
 
 .project-nav a {
   cursor: pointer;

@@ -1,3 +1,4 @@
+/* ------------------- Project Page ------------------- */
 .projectsContainer {
     display: block !important; 
     max-width: 1400px;
@@ -5,6 +6,8 @@
     padding: 0 2rem 2rem 2rem; 
     min-height: 100vh;
     background-color: var(--primary-cream);
+
+    border: 5px solid none;
 }
 
 .projectLayout {
@@ -16,32 +19,61 @@
     margin-top: 0 !important; 
     padding-top: 0;
 
+    border: 5px solid none;
+
 }
+
+/* ------------------- Side Bar ------------------- */
+    .projectSidebarContainer {
+        display: flex;
+
+        position: sticky !important;
+        top: 180px !important;
+
+        flex-direction: column;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+        border: 5px solid none;
+    
+    }
+
+
+
+/* ------------------- Project Content ------------------- */
 
 .projectMainContent {
     flex: 1;
     min-width: 0;
-}
 
+    border: 5px solid none;
+}
 .projectHeader {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+
     margin-bottom: 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
 
+    border: 10px solid none;
 }
-
 .sectionTitle {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     font-weight: 700;
     color: #171717;
+
+    border: 5px solid none;
 }
 
 .techStackLabel {
     font-weight: bold;
     margin-right: 10px;
+    border: 5px solid none;
 }
 
 .projectTags {
@@ -49,6 +81,7 @@
     flex-wrap: wrap;
     gap: 10px;
     align-items: center;
+    border: 5px solid none;
 
 }
 
@@ -60,10 +93,14 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     color: rgb(140, 132, 86);
     font-weight: 500;
+
+    border: 5px solid none;
 }
 
 .projectContentArea {
     border: 1px solid transparent;
+
+    border: 5px solid none;
 }
 
 .projectGrid {
@@ -72,6 +109,8 @@
     gap: 2rem;
     padding-top: 0;
     border-top: 2px solid rgba(0, 0, 0, 0.05);
+
+    border: 5px solid none;
 }
 
 .projectCard {
@@ -85,6 +124,8 @@
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
+
+    border: 5px solid none;
 }
 
 .projectDescription {
@@ -94,6 +135,8 @@
     margin-bottom: 1.5rem;
     height: auto;
     flex-grow: 1; 
+
+    border: 5px solid none;
 }
 
 .projectCardContent {
@@ -156,56 +199,103 @@
 }
 
 
-.project-nav {
+.projectNav {
+    display: flex;  
     position: sticky;
-    top: 120px;
-    margin: 0 !important;
-    padding: 1rem 0;
-    height: auto;
-    display: flex;
-    align-items: center;
-    margin-bottom: 0 !important; 
+    top: 7.5rem;
+    z-index: 999; 
+
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.5em;
+
+    border-bottom: 2px solid black;
+    background-color: var(--primary-cream);
+
+     border: 10px solid none;
 }
 
 
-/* -------------------------- Mobile -------------------------------- */
 
-@media (max-width: 1024px) {
-    .project-nav {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------- */
+/* -------------------- Mobile --------------------- */
+/* ------------------------------------------------- */
+@media (max-width: 900px) {
+    .projectNav {
         top: 120px;
         flex-wrap: wrap;
         gap: 1rem;
-        padding: 0.75rem;
+        padding: 0.5em;
+        font-size: 1em;
+        border: 10px solid none;
+        
+    }
+
+    .sectionTitle{
+        border: 4px solid none;
     }
 
     .nav-link-item, .nav-link-active {
         font-size: 0.85rem;
         padding: 4px 8px;
         white-space: nowrap;
+        border: 100px solid red;
     }
 
     .projectsContainer {
         padding: 120px 1rem 2rem 1rem;
+        border: 10px dotted none;
     }
 
     .projectLayout {
         display: flex !important;
         flex-direction: column !important;
-        gap: 1.5rem;
+        gap: 0;
         margin-top: 0 !important;
-        padding-top: 1rem !important;
+
+        border: 10px dotted none;
     }
+
 
     /* Target generic AND specific project containers for Warble/Trellis */
     .projectContentArea :global(.solo-project-container),
     .projectContentArea :global(.warble-container),
-    .projectContentArea :global(.trellis-container) {
+    .projectContentArea :global(.trellis-container){
         display: flex !important;
         flex-direction: column !important;
         gap: 2rem !important;
         align-items: center !important;
         width: 100% !important;
         padding: 0 !important;
+
+        border: 100px dotted none;
     }
 
     /* Force Media (Video/Images) to full width */
@@ -245,14 +335,14 @@
     .projectSidebarContainer {
   
         width: 100% !important;
-        position: relative !important;
+        position: sticky !important;
         top: 0 !important;
         display: flex;
         flex-direction: column;
         align-items: center;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-        
 
+        border: 5px dashed none;
     
     }
 
@@ -262,7 +352,8 @@
         padding: 0 !important;
         background: transparent !important;
         border: none !important;
-        border: 4px solid green;
+
+        border: 5px dotted none;
     }
 
     .projectSidebarContainer :global(.section-title) {
@@ -277,6 +368,8 @@
         flex-wrap: wrap !important;
         justify-content: center !important;
         gap: 10px !important;
+
+        border: 10px solid none;
     }
 
     .projectSidebarContainer :global(.github-link) {
@@ -302,6 +395,7 @@
         flex-direction: column !important;
         align-items: center !important;
         text-align: center;
+        border: 10px solid none;
     }
 
     .sectionTitle {

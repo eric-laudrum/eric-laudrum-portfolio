@@ -1,9 +1,11 @@
+import styles from "../app/projects/projects.module.css"
+
 export default function ProjectNav({ active, setActive }: { active: string, setActive: (val: string) => void }) {
     
     const navItems = [/* "Contractor Connect", */"Trellis", "Warble", "Loop-In" ];
     
     return (
-        <div className='project-nav'>
+        <div className={styles.projectNav}>
             {navItems.map((item) => (
                 <a 
                     key={item}

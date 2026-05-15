@@ -96,8 +96,8 @@
     line-height: 1.5;
     color: #444;
     margin-bottom: 1.5rem;
-    height: auto;      /* Removed the 100px height */
-    flex-grow: 1;      /* Re-added to push tags to bottom of available space */
+    height: auto;     
+    flex-grow: 1; 
 }
 
 .projectCardContent {
