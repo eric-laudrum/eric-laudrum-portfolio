@@ -14,7 +14,7 @@ export default function ContactPage(){
                         rel="noopener noreferrer"
                         className={styles.resumeLink}
                     >
-                        LinkedIn Profile →
+                        LinkedIn →
                     </a>
 
                     <a 
@@ -23,7 +23,7 @@ export default function ContactPage(){
                         rel="noopener noreferrer"
                         className={styles.resumeLink}
                     >
-                        GitHub Profile →
+                        GitHub →
                     </a>
                 </div>
             

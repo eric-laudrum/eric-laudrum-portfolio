@@ -16,7 +16,7 @@ export default function ContactPage(){
                         className="resume-link"
                         style={{ fontWeight: 'bold', color: '#2a769c', fontSize: '0.9rem' }}
                     >
-                        LinkedIn Profile →
+                        LinkedIn →
                     </a>
                 </div>
 
@@ -28,7 +28,7 @@ export default function ContactPage(){
                         className="resume-link"
                         style={{ fontWeight: 'bold', color: '#2a769c', fontSize: '0.9rem' }}
                     >
-                        GitHub Profile →
+                        GitHub →
                     </a>
                 </div>
 
