@@ -1,17 +1,25 @@
 /* contact.module.css */
 
 .sectionContainer{
+    display: flex;
+    align-content: center;
+    padding: 1em;
     border: 10px solid none;
+
 }
 
 .contactContainer {
     display: flex;
     flex-direction: column;
-    padding: 2rem 5%;
+    align-self: center;
+    justify-self: center;
+    
     gap: 3rem;
     width: 100%;
     min-height: 70vh;
     box-sizing: border-box;
+    margin-top: 1em;
+    padding: 1em 5em;
     background-color: var(--primary-cream);
 
     border: 5px solid none;
@@ -22,6 +30,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-left: 4em;
     
     border: 5px dashed none;
 }
