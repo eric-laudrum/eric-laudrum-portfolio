@@ -63,7 +63,6 @@
 }
 .sectionTitle {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
     font-weight: 700;
     color: #171717;
 
@@ -211,7 +210,7 @@
     padding: 0.5em;
     font-size: 1.5em;
 
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.078);
     background-color: var(--primary-cream);
 
      border: 10px solid none;

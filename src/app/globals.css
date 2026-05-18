@@ -8,8 +8,8 @@
   --primary-cream: #f0ede9;
   --secondary-cream: #c0ba9e;
 
-  --primary-font:"Bookmen";
-  --secondary-font:"Bookmen";
+  --primary-font:"Bookmen", serif;
+  --secondary-font:"Bookmen", sans-serif;
 
   
   

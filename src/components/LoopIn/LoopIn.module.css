@@ -82,6 +82,7 @@
     padding-top: 1em;
 }
 .listItem{
+    font-family: var(--secondary-font);
     margin: 0.5em 0;
     border: 3px solid none;
 }

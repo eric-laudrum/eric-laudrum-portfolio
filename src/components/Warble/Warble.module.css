@@ -1,20 +1,31 @@
 
 .sectionContainer {
   padding: 2rem 4rem;
-  margin: 20px;
+  margin: 0 20px;
   min-height: 70vh;
   background-color: rgba(241, 246, 251, 0.5);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.073);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+  
+  border: 10px solid none;
 }
 
 .projectContainer {
   display: flex;
-  gap: 4rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+  gap: 4rem;
   scroll-margin-top: 200px;
+
+  
+}
+
+.horizontalRule{
+  margin: 1.5em 0;
+  color: rgba(0, 0, 0, 0.346);
 }
 
 .leftContainer {
@@ -33,8 +44,9 @@
     margin: 1rem 0;
 }
 
-.projectDescription{
+.projectDescription, .listItem{
     font-size: 1rem;
+    font-family: var(--secondary-font);
 }
 
 .badgeContainer {
@@ -52,7 +64,7 @@
 }
 
 .projectImage {
-    width: 100%;
+    width: 90%;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -63,6 +75,28 @@
 .projectContainer, .sectionContainer {
     scroll-margin-top: 10rem; 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* ---------------------- Mobile ---------------- */
