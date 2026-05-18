@@ -41,14 +41,7 @@ export default function ProjectPage() {
                     <div className={styles.projectHeader}>
                         <h1 className={styles.sectionTitle}>{activeProject}</h1>
                         
-                        {currentProject?.tags && (
-                            <div className={styles.projectTags}>
-                                <span className={styles.techStackLabel}>Tech Stack:</span>
-                                {currentProject.tags.map(tag => (
-                                    <span key={tag} className={styles.tagBadge}>{tag}</span>
-                                ))}
-                            </div>
-                        )}
+                        
                     </div>
 
                     <div className={styles.projectContentArea}>

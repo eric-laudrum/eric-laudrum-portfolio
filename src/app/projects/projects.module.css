@@ -56,7 +56,7 @@
     align-items: flex-start;
 
 
-    margin-bottom: 3rem;
+    margin: 1em 0 3rem;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
     border: 10px solid none;
@@ -266,7 +266,7 @@
         font-size: 0.85rem;
         padding: 4px 8px;
         white-space: nowrap;
-        border: 100px solid red;
+        border: 100px solid none;
     }
 
     .projectsContainer {
@@ -356,10 +356,14 @@
         border: 5px dotted none;
     }
 
-    .projectSidebarContainer :global(.section-title) {
+    .projectSidebarContainer :global(.sectionTitle) {
         text-align: center;
         font-size: 1.2rem;
         margin-bottom: 1rem;
+        color: red;
+
+        border: 10px solid none;
+
     }
 
     .projectSidebarContainer :global(.sidebar-nav) {
@@ -401,7 +405,11 @@
     .sectionTitle {
         font-size: 2rem;
         margin-top: 0 !important;
+        padding: 5em;
         text-align: center;
+
+        border: 10px solid none;
+
     }
 
     .projectTags {

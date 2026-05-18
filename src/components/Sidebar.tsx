@@ -1,3 +1,6 @@
+import styles from '../app/projects/projects.module.css';
+
+
 interface SidebarProps {
   title: string;
   sections: string[];
@@ -7,6 +10,7 @@ interface SidebarProps {
   resumeUrl?: string;
   customClassName?: string;
 }
+
 
 export default function Sidebar({ title, sections, customClassName, prefix, repo, repoText, resumeUrl }: SidebarProps) {
   return (

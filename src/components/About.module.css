@@ -78,7 +78,7 @@
     width: fit-content;
     min-width: 400px;
 
-    border: px solid red;
+    border: px solid none;
 }
 .attribution{
     display: flex;
@@ -166,7 +166,7 @@
     gap: 1em;
     line-height: 1.7;
 
-    border: 3px solid red;
+    border: 3px solid none;
 
 
 }

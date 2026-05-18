@@ -173,7 +173,136 @@
 .github-link:hover {
     color: #2a769c;
     padding-left: 5px;
+
 }
+
+
+
+
+
+/* Project Cards */
+
+.sectionTitle{
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+.projectGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    gap: 2rem;
+
+    border: 5px solid none;
+}
+
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    min-height: 350px;
+    height: auto;
+    padding: 20px;
+    background: var(--primary-cream);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    border: 5px solid none;
+}
+
+.projectDescription {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #444;
+    margin-bottom: 1.5rem;
+    height: auto;
+    flex-grow: 1; 
+
+    border: 5px solid none;
+}
+
+.projectCardContent {
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.projectCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 10px rgb(42, 118, 156);
+    border-color: #2a769c;
+}
+
+.projectImg {
+    width: fit-content;
+    height: 180px;
+    object-fit:scale-down;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+    align-self: center;
+    border: 10px solid var(--secondary-cream);
+}
+
+
+.tagRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.projectTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #171717;
+}
+
+.headerTitleRow {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+.liveButton {
+    background-color: #2a769c;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    height: fit-content;
+}
+
+.liveButton:hover {
+    background-color: #1e5a78;
+}
+
+
+.projectNav {
+    display: flex;  
+    position: sticky;
+    top: 7.5rem;
+    z-index: 999; 
+
+    justify-content: space-evenly;
+
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1.5em;
+
+    border-bottom: 2px solid black;
+    background-color: var(--primary-cream);
+
+     border: 10px solid none;
+}
+
+
+
 /* ----------------------------------------------------- */
 
 

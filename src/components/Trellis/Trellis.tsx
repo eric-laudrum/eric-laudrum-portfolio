@@ -36,7 +36,7 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
                         <iframe
                             src="https://www.youtube.com/embed/xl6ijl_q9w4"
                             title="YouTube video player"
-                            frameBorder="0"
+                    
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                         >
@@ -59,10 +59,10 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
                     </div>
                     
                     <ul>
-                        <li>Next.js & TypeScript: Modern, type-safe frontend architecture for a predictable state.</li>
-                        <li>Socket.io: Low-latency, bi-directional communication for instant grid updates across all connected clients.</li>
-                        <li>Tone.js: A sophisticated web-audio framework that handles scheduling and synthesis with sub-millisecond precision.</li>
-                        <li>Node.js: A lightweight, event-driven backend acting as the central relay for sequencer state.</li>
+                        <li><strong>Next.js & TypeScript:</strong> Modern, type-safe frontend architecture for a predictable state.</li>
+                        <li><strong>Socket.io:</strong> Low-latency, bi-directional communication for instant grid updates across all connected clients.</li>
+                        <li><strong>Tone.js:</strong> A sophisticated web-audio framework that handles scheduling and synthesis with sub-millisecond precision.</li>
+                        <li><strong>Node.js:</strong> A lightweight, event-driven backend acting as the central relay for sequencer state.</li>
                     </ul>
                </div>
             </div>
@@ -76,14 +76,14 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
                 
                     
                     <p className={styles.projectDescription}>
-                        The project utilizes a State-Sync Relay architecture. 
+                        <strong>State-Sync Relay Architecture:</strong>
                         Rather than streaming audio, which is bandwidth-heavy and prone to lag, 
                         Trellis transmits only the "Step Data" (small JSON packets) via WebSockets.
                     </p>
 
                     <ul>
-                        <li>Decoupled Audio Clock: The audio engine runs on a separate timing thread from the UI, ensuring that even if the browser is under heavy load, the beat never drops.</li>
-                        <li>Optimistic UI Updates: The interface reflects user changes instantly while the server validates and broadcasts the state in the background to maintain a single source of origin.</li>
+                        <li><strong>Decoupled Audio Clock:</strong> The audio engine runs on a separate timing thread from the UI, ensuring that even if the browser is under heavy load, the beat never drops.</li>
+                        <li><strong>Optimistic UI Updates:</strong> The interface reflects user changes instantly while the server validates and broadcasts the state in the background to maintain a single source of origin.</li>
                     </ul>
                 </div>
             </div>
