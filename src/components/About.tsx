@@ -22,53 +22,82 @@ export default function About() {
             </div>
 
             {/* Philosophy & Short Intro */}
-            <div className={styles.textColumns}>
-                <div className={styles.textColumn}>
-                    <p className={styles.quote}>
-                        I Believe That Good Design Looks Invisible, And The Best Tools Are The Ones You Have Available. 
-                    </p>
-                </div>
-                <div className={styles.textColumn}>
-                    <p className={styles.text}>
-                        I’m a full-stack developer bridging the gap between technical logic and human behavior. 
-                        With a background in Sociology and a focus on Computer Programming, 
-                         I build software that is as intuitive as it is powerful.
-                    </p>
-                </div>
+
+            <div className={styles.textColumn}>
+                <p className={styles.quote}>
+                    Good design, when it's done well, becomes invisible. It's only when it's done poorly that we notice it.
+                </p>
+                <p className={styles.attribution}>- Jared Spool</p>
             </div>
+            
+
 
             {/* Interactive Preview */}
             <div className={styles.projectBar}>
                 <div className={styles.badgeRow}>
-                    <button className={`${styles.setActiveButton} ${activeTab === 'skills' ? styles.active : ''}`} onClick={() => setActiveTab('skills')}>Skills</button>
                     <button className={`${styles.setActiveButton} ${activeTab === 'projects' ? styles.active : ''}`} onClick={() => setActiveTab('projects')}>Projects</button>
+                    <button className={`${styles.setActiveButton} ${activeTab === 'skills' ? styles.active : ''}`} onClick={() => setActiveTab('skills')}>Skills</button>
                     <button className={`${styles.setActiveButton} ${activeTab === 'ai' ? styles.active : ''}`} onClick={() => setActiveTab('ai')}>AI & Data</button>
                 </div>
 
                 <div className={styles.projectRow}>
-                    {activeTab === 'skills' && (
-                        <>
-                            <img className={styles.smallPhoto} src="/assets/screenshots/warbleHome.jpg" alt="Skills" />
-                            <div className={styles.projectAbout}>
-                                <p className={styles.projectText}>Specializing in Java, C#, Python, and React. I build scalable backends and fluid frontends.</p>
-                            </div>
-                        </>
-                    )}
                     {activeTab === 'projects' && (
                         <>
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
-                                <p className={styles.projectText}>Check out some current projects, from real-time music production to e-commerce.</p>
+                                <p className={styles.projectText}>
+                                    Check out some of my current projects, from real-time web-based music production to specialized e-commerce engines.
+                                </p>
+                                <p className={styles.projectText}>
+                                    I love diving into niche, complex technical puzzles and building the right tools to solve them. 
+                                    
+                                </p>
+                                <p className={styles.projectText}>
+                                    Whether that means eliminating latency so multiple users can collaborate in perfect lock-step, 
+                                        or creating a custom marketplace to showcase products and engage with customers,
+            
+                                     my goal is always to create a user experience that feels intuitive, effortless, and inclusive. 
+                                </p>
                                 <Link className={styles.linkButton} href='/projects'>View Projects</Link>
                             </div>
                         </>
                     )}
+
+
+                    {activeTab === 'skills' && (
+                        <>
+                            <img className={styles.smallPhoto} src="/assets/screenshots/warbleHome.jpg" alt="Skills" />
+                            <div className={styles.projectAbout}>
+                                <p className={styles.projectText}>
+
+                                    I specialize in building scalable backends and fluid, responsive frontends using Java, C#, Python, and React. 
+                                    
+                                </p>
+                                <p className={styles.projectText}>
+                                    My approach to development is largely driven by outcomes rather than being locked into a single stack.
+                                    
+                                    That means I am always adding to my toolkit and learning whatever language, library, or framework is required to get the job done right. 
+                                </p>
+
+                            </div>
+                        </>
+                    )}
+                    
                     {activeTab === 'ai' && (
                         <>
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
                                 
-                            <p className={styles.projectText}>Training and evaluating LLMs through structured data annotation and prompt engineering.</p>
+                                <p className={styles.projectText}>
+                                    Beyond core development, I work with training and evaluating Large Language Models through structured data annotation, 
+                                        code evaluation, and prompt engineering. 
+                                </p>
+                                <p className={styles.projectText}>
+                                    My background helps me bridge the gap between raw numbers and real-world human behaviour, 
+                                        allowing me to analyze data patterns with a focus on accuracy and context. 
+
+                                
+                                </p>
                             </div>
                         </>    
                     )}

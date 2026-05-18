@@ -6,11 +6,10 @@
 
 .sectionContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
 
-    justify-content: flex-start;
-    align-items: flex-start;
+
 
     width: 100%;
     min-height: max-content;
@@ -53,73 +52,79 @@
 
 
 /* ----------------- About Text ----------------- */
-.textColumns{
-    padding: 0 2em;
-    
-    border: 5px solid none;
-}
-.textColumn{
 
-    border: 5px solid none;
+
+.textColumn {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 3.5em 5em 3em;
+    width: 100%;
+
+    border: 5px dotted none;
+
+
 }
 .quote {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Bookman", serif;
     line-height: 1.2;
     color: #151d08;
     font-weight: bold;
     text-transform: capitalize;
+    width: fit-content;
+    min-width: 400px;
+
+    border: px solid red;
+}
+.attribution{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-right: 3em;
+    
+    border: 2px solid none;
 }
 .text {
     font-size: 1.1rem;
     line-height: 1.8;
     color: #333;
-
 }
-
-
-/* ------------------------- Projects ------------------------- */
-.textColumns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
-    align-items: start;
-    margin: 1em 0;
-      
-}
-.textColumn {
-    flex: 0 1 500px;
-    display: flex;
-    flex-direction: column;
-    border: 5px solid none;
-}
-
-
 
 
 
 
 /* --------------- Project Bar ----------------*/
 .projectBar{
+    display: flex;
+    flex-direction: row;
     background-color: var(--secondary-cream);
-    padding: 1em;
+    padding: 0 1em;
     width: 100%;
     align-self: center;
+    
 
-    border: 5px solid none;
+    border: 5px dashed none;
 }
 .badgeRow{
     display: flex;
-    gap: 3em;
+    flex-direction: column;
+    gap: 1em;
     margin-top: 0.75em;
     justify-content: center;
+    border: 2px solid none;
 }
 .setActiveButton {
+    width: 100%;
     opacity: 0.6;
     transition: all 0.3s ease;
     padding: 1em;
     font-size: 1em;
-    border: none;
+    border: 2px solid none;
+
 }
 .setActiveButton.active {
     opacity: 1;
@@ -132,14 +137,17 @@
     flex-direction: row;
     padding: 2em;
     gap: 1.1em;
+
+    align-items: center;
     
 }
 .smallPhoto {
-    flex: 1 1 0%;
+    flex: 1;
     min-width: 0;
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: scale-down;
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.1);
+    height: fit-content;
     
     border: 10px solid rgba(0, 0, 0, 0.098);
 }
@@ -148,6 +156,8 @@
 
     display: flex;
     flex-direction: column;
+    flex: 1;
+    width: 100%;
 
     align-content: space-evenly;
     justify-content: start;
@@ -156,33 +166,31 @@
     gap: 1em;
     line-height: 1.7;
 
+    border: 3px solid red;
+
 
 }
 
 
 
 
-.projectAbout, .smallPhoto{
-    width: 100%;
-    flex: 1;
+.setActiveButton {
 
-}
-
-.linkButton, .setActiveButton{
-    border: 1px solid rgba(0, 0, 0, 0.287);
     border-radius: 5px;
     padding: 0.5em 1em;
     background-color: var(--primary-cream);
-    width: fit-content;
-    font-size: 0.9rem;
 
-}
-.setActiveButton {
+    width: 100%;
+    height: 4em;
+
+    font-size: 0.9rem;
     opacity: 0.6;
     transition: all 0.3s ease;
-    padding: 1em;
+
     font-size: 1em;
-    border: none;
+    
+    border: 1px solid rgba(0, 0, 0, 0.287);
+
   
 }
 .setActiveButton.active {
@@ -191,6 +199,22 @@
     font-weight: bold;
 }
 
+.linkButton{
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 1px solid rgba(0, 0, 0, 0.139);
+    transition: all 0.5s ease;
+    
+}
+.linkButton:hover{
+    transition: all 0.5s ease;
+    color: var(--secondary-cream);
+    box-shadow: 0 0 8px 8px rgba(122, 142, 93, 0.165);
+}
+
+
 /* ---------------------------------------------------- */
 
 
@@ -198,7 +222,7 @@
 
 
 
-/* ------------------ Tablet ------------------ */
+/* ------------------ Tablet ------------------ 
 @media (max-width: 1100px) {
     .aboutTitle {
         font-size: 5rem; 
@@ -214,7 +238,7 @@
     }
 }
 
-
+*/
 
 
 
