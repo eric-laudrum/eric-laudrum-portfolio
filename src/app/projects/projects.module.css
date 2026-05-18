@@ -356,15 +356,7 @@
         border: 5px dotted none;
     }
 
-    .projectSidebarContainer :global(.sectionTitle) {
-        text-align: center;
-        font-size: 1.2rem;
-        margin-bottom: 1rem;
-        color: red;
 
-        border: 10px solid none;
-
-    }
 
     .projectSidebarContainer :global(.sidebar-nav) {
         display: flex !important;

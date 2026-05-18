@@ -73,7 +73,7 @@ export default function AboutPage() {
                             <ul className={styles.paragraphList}>
                                 <li className={styles.aboutParagraph}>Full Stack Developer | Logistics Specialist</li>
                                 <li className={styles.aboutParagraph}>
-                                    A full-stack developer who turns complex ideas into simple, intuitive products that work cleanly and feel effortless to use. 
+                                    I'm a full-stack developer who turns complex ideas into simple, intuitive products that work cleanly and feel effortless to use. 
                                 </li>
                                 <li className={styles.aboutParagraph}>
                                     I work across Java, C#, Python, React, and Node.js, blending technical logic with a background in sociology.

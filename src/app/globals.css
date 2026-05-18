@@ -157,6 +157,7 @@ main{
     display: inline-block;
     color: var(--primary);
     font-weight: 500;
+    border: 10px solid red;
 }
 
 .project-header{

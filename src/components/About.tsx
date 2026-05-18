@@ -46,7 +46,7 @@ export default function About() {
                             <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
                             <div className={styles.projectAbout}>
                                 <p className={styles.projectText}>
-                                    Check out some of my current projects, from real-time web-based music production to specialized e-commerce engines.
+                                    Check out some current projects, from real-time web-based music production to specialized e-commerce engines.
                                 </p>
                                 <p className={styles.projectText}>
                                     I love diving into niche, complex technical puzzles and building the right tools to solve them. 
