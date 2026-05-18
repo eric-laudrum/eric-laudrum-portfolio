@@ -1,3 +1,14 @@
+.sectionContainer{
+      padding: 2rem 4rem;
+  margin: 0 20px;
+  min-height: 70vh;
+  background-color: rgba(241, 246, 251, 0.5);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.073);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+  
+}
+
 .sectionHeader {
     font-size: 1.8rem;
     color: #2a769c;

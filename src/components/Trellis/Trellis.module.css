@@ -1,11 +1,25 @@
 .sectionContainer {
   padding: 2rem 4rem;
-  margin: 20px;
+  margin: 0 20px 20px;
   min-height: 70vh;
   background-color: rgba(241, 246, 251, 0.5);
   border-radius: 10px;
   border: 1px solid rgba(0, 0, 0, 0.073);
   box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.005);
+
+  border: 10px solid none;
+}
+
+
+.projectImageContainer{
+  width: 400px;
+  border: 5px solid none;
+}
+
+.projectImage{
+  border-radius: 8px;
+
+  border: 2px solid none;
 }
 
 .projectContainer {
@@ -29,6 +43,7 @@
 }
 
 .projectDescription{
+  font-family: var(--secondary-font);
     font-size: 1rem;
 }
 
@@ -88,6 +103,16 @@
 .projectContainer, .sectionContainer {
     scroll-margin-top: 10rem; 
 }
+
+
+.listItem{
+  font-family: var(--secondary-font);
+
+}
+
+
+
+
 
 
 
