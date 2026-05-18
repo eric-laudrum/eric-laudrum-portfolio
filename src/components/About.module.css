@@ -9,6 +9,7 @@
     flex-direction: column;
     flex-wrap: wrap;
 
+    align-items: center;
 
 
     width: 100%;
@@ -61,8 +62,8 @@
     justify-content: center;
     align-items: center;
 
-    padding: 3.5em 5em 3em;
     width: 100%;
+    padding: 1em;
 
     border: 5px dotted none;
 
@@ -70,15 +71,19 @@
 }
 .quote {
     font-size: 3rem;
-    font-family: "Bookman", serif;
+    font-family: var(--primary-font);
     line-height: 1.2;
+
+
+    width: 100%;
+
     color: #151d08;
     font-weight: bold;
     text-transform: capitalize;
-    width: fit-content;
-    min-width: 400px;
 
-    border: px solid none;
+
+
+    border: 5px solid none;
 }
 .attribution{
     display: flex;
@@ -100,7 +105,7 @@
 /* --------------- Project Bar ----------------*/
 .projectBar{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: var(--secondary-cream);
     padding: 0 1em;
     width: 100%;
@@ -112,7 +117,7 @@
 }
 .badgeRow{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1em;
     margin-top: 0.75em;
     justify-content: center;
