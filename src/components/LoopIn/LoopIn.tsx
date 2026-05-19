@@ -53,10 +53,22 @@ export default function LoopIn({ techStack }: LoopInProps) {
                     
                     <ul className={styles.list}>
         
-                        <li className={styles.listItem}><strong>MERN Stack:</strong> React (Vite) for a responsive frontend and Node.js/Express for the backend API.</li>
-                        <li className={styles.listItem}><strong>MongoDB Atlas:</strong> A scalable cloud database serving as the central data store for content and user data.</li>
-                        <li className={styles.listItem}><strong>Firebase Admin SDK:</strong> Secure, industry-standard authentication for protected administrative access.</li>
-                        <li className={styles.listItem}><strong>Firebase Cloud Storage:</strong> High-performance asset hosting for article images via Google Cloud buckets.</li>
+                        <li className={styles.listItem}><strong>MERN Stack:</strong></li>
+                        <li className={styles.listItem}>
+                            React (Vite) for a responsive frontend and Node.js/Express for the backend API.
+                        </li>
+                        <li className={styles.listItem}><strong>MongoDB Atlas:</strong></li>
+                        <li className={styles.listItem}>
+                            A scalable cloud database serving as the central data store for content and user data.
+                        </li>
+                        <li className={styles.listItem}><strong>Firebase Admin SDK:</strong></li>
+                        <li>
+                            Secure, industry-standard authentication for protected administrative access.
+                        </li>
+                        <li className={styles.listItem}><strong>Firebase Cloud Storage:</strong></li>
+                        <li>
+                            High-performance asset hosting for article images via Google Cloud buckets.
+                        </li> 
                     </ul>
                </div>
             </div>
@@ -72,8 +84,14 @@ export default function LoopIn({ techStack }: LoopInProps) {
                         The backend utilizes custom Express middleware to bridge Firebase's security layers with MongoDB's flexible schema.
                     </p>
                     <ul className={styles.list}>
-                        <li className={styles.listItem}><strong>Decoupled Content Flow:</strong> Article metadata is handled by the database while heavy media assets are offloaded to Cloud Storage to maintain high performance.</li>
-                        <li className={styles.listItem}><strong>Administrative Workflow:</strong> A protected dashboard allows for real-time CRUD operations, providing a streamlined interface for editing and publishing.</li>
+                        <li className={styles.listItem}><strong>Decoupled Content Flow:</strong></li>
+                        <li className={styles.listItem}>
+                            Article metadata is handled by the database while heavy media assets are offloaded to Cloud Storage to maintain high performance.
+                        </li>
+                        <li className={styles.listItem}><strong>Administrative Workflow:</strong></li>
+                        <li className={styles.listItem}>
+                            A protected dashboard allows for real-time CRUD operations, providing a streamlined interface for editing and publishing.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -85,9 +103,18 @@ export default function LoopIn({ techStack }: LoopInProps) {
                 <div className={styles.leftContainer}>
                     <h2 className={styles.projectTitle}>Roadmap</h2>
                     <ul className={styles.list}>
-                        <li className={styles.listItem}><strong>Emailing Integration:</strong> Implementing Formspree.io to handle automated newsletters and community notifications.</li>
-                        <li className={styles.listItem}><strong>Events Calendar:</strong> A dynamic scheduling view to track new releases, relevant music events, and platform updates.</li>
-                        <li className={styles.listItem}><strong>Video Embedding:</strong> Expanding the article editor to support native video playback for artist interviews and production tutorials.</li>
+                        <li className={styles.listItem}><strong>Emailing Integration:</strong></li>
+                        <li className={styles.listItem}>
+                            Implementing Formspree.io to handle automated newsletters and community notifications.
+                        </li>
+                        <li className={styles.listItem}><strong>Events Calendar:</strong></li>
+                        <li className={styles.listItem}>
+                            A dynamic scheduling view to track new releases, relevant music events, and platform updates.
+                        </li>
+                        <li className={styles.listItem}><strong>Video Embedding:</strong></li>
+                        <li className={styles.listItem}>
+                            Expanding the article editor to support native video playback for artist interviews and production tutorials.
+                        </li>
                     </ul>
                 </div>
             </div>

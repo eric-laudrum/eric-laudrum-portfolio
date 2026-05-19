@@ -47,8 +47,12 @@
 .projectDescription, .listItem{
     font-size: 1rem;
     font-family: var(--secondary-font);
+    text-align: start;
 }
 
+.projectDescription{
+  padding: 1em;
+}
 .badgeContainer {
     display: flex;
     flex-wrap: wrap;
@@ -76,8 +80,11 @@
     scroll-margin-top: 10rem; 
 }
 
-
-
+.projectDescription strong, 
+.leftContainer ul li strong {
+    font-weight: 700;
+    color: var(--primary); 
+}
 
 
 
