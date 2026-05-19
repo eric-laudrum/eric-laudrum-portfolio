@@ -84,15 +84,23 @@ export default function TrellisSequencer({ techStack }: ProjectComponentProps) {
                     <h2 className={styles.projectTitle}>Architecture & Design</h2>
                 
                     
-                    <p className={styles.projectDescription}>
-                        <strong>State-Sync Relay Architecture:</strong>
-                        Rather than streaming audio, which is bandwidth-heavy and prone to lag, 
-                        Trellis transmits only the "Step Data" (small JSON packets) via WebSockets.
-                    </p>
+                    <ul>
+                        <li className={styles.listItem}><strong>State-Sync Relay Architecture:</strong></li>
+                        <li> 
+                            Rather than streaming audio, which is bandwidth-heavy and prone to lag, 
+                            Trellis transmits only the "Step Data" (small JSON packets) via WebSockets.
+                        </li>
+                    </ul>
 
                     <ul>
-                        <li className={styles.listItem}><strong>Decoupled Audio Clock:</strong> The audio engine runs on a separate timing thread from the UI, ensuring that even if the browser is under heavy load, the beat never drops.</li>
-                        <li className={styles.listItem}><strong>Optimistic UI Updates:</strong> The interface reflects user changes instantly while the server validates and broadcasts the state in the background to maintain a single source of origin.</li>
+                        <li className={styles.listItem}><strong>Decoupled Audio Clock:</strong></li>
+                        <li>
+                            The audio engine runs on a separate timing thread from the UI, ensuring that even if the browser is under heavy load, the beat never drops.
+                        </li>
+                        <li className={styles.listItem}><strong>Optimistic UI Updates:</strong></li>
+                        <li> 
+                            The interface reflects user changes instantly while the server validates and broadcasts the state in the background to maintain a single source of origin.
+                        </li>
                     </ul>
                 </div>
             </div>

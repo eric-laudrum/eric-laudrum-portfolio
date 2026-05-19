@@ -149,3 +149,38 @@
     margin: 0 auto;
   }
 }
+
+
+
+
+/* ------------------- Mobile ------------------ */
+
+.sectionContainer{
+  justify-content: center;
+
+  border: 5px solid none;
+}
+
+
+.projectImageContainer{
+  width: fit-content;
+
+  border: 5px solid none;
+}
+.projectImage{
+  width: 100%;
+  justify-self: center;
+  margin: none;
+  padding: none;
+
+  border: 5px solid none;
+}
+
+.projectDescription{
+  text-align: start;
+  padding: 1em;
+
+
+  border: 5px solid none;
+
+}

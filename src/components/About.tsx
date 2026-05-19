@@ -85,7 +85,7 @@ export default function About() {
                     
                     {activeTab === 'ai' && (
                         <>
-                            <img className={styles.smallPhoto} src="/assets/screenshots/trellis-sequencer.jpg" alt="Project" />
+                            <img className={styles.smallPhoto} src="/assets/screenshots/machine-learning.jpg" alt="Machine Learning" />
                             <div className={styles.projectAbout}>
                                 
                                 <p className={styles.projectText}>
